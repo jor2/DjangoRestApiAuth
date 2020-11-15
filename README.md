@@ -35,3 +35,5 @@ http http://34.89.59.109:8000/api/hello/ 'Authorization: Bearer XpLAPD7fpViEsknI
 ```
 
 All these endpoints can also be accessed on the frontend. The hello or Super Secret Message on the frontend displays token auth working. Only logged in users with valid tokens can view.
+
+The frontend is meant to output results so you can see the results from the backend and demo only. Obviously wouldn't do this outside of demo.
