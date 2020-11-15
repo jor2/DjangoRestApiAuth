@@ -19,8 +19,8 @@ kubectl apply -f kube/deployment.yaml
 ```
 
 ##### View Web Service at:
-- Frontend: http://34.89.36.19:5000/
-- Backend: http://34.89.59.109:8000/
+- Frontend: http://34.105.239.60:5000/
+- Backend: http://34.89.36.19:8000/
 
 #### Enpoints of backend are:
 ```bash
@@ -33,11 +33,11 @@ kubectl apply -f kube/deployment.yaml
 
 They can be accessed as such:
 ```bash
-http post http://34.89.59.109:8000/register/ username='test1' password='password'
-http post http://34.89.59.109:8000/login/ username='test1' password='password'
-http post http://34.89.59.109:8000/logout/ token='zHBfbaO1NYXCGZjFAwarKtVKom3hxw'
-http post http://34.89.59.109:8000/refresh/ refresh_token='kIuQ3enXkoDSS1Q4pEYr7uOgr6snX3'
-http http://34.89.59.109:8000/api/hello/ 'Authorization: Bearer XpLAPD7fpViEsknIWR8XyThvlKpIxl'
+http post http://34.89.36.19:8000/register/ username='test1' password='password'
+http post http://34.89.36.19:8000/login/ username='test1' password='password'
+http post http://34.89.36.19:8000/logout/ token='zHBfbaO1NYXCGZjFAwarKtVKom3hxw'
+http post http://34.89.36.19:8000/refresh/ refresh_token='kIuQ3enXkoDSS1Q4pEYr7uOgr6snX3'
+http http://34.89.36.19:8000/api/hello/ 'Authorization: Bearer XpLAPD7fpViEsknIWR8XyThvlKpIxl'
 ```
 
 All these endpoints can also be accessed on the frontend. The hello or Super Secret Message on the frontend displays token auth working. Only logged in users with valid tokens can view.
