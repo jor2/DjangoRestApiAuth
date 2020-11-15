@@ -9,7 +9,7 @@ CLIENT_SECRET = 'Tl7ivTGUEcY9RqgFES7Km2BDyvlX1ZBaqZuNFOItpVPyyrWpdBVXdRFwNbWCcJ0
 
 def get_token(request):
     response = requests.post(
-        'http://' + get_host_from_request(request) + '/o/token/',
+        f'http://{get_host_from_request(request)}/o/token/',
         data={
             'grant_type': 'password',
             'username': request.data.get('username', ''),
@@ -23,7 +23,7 @@ def get_token(request):
 
 def revoke_token(request):
     response = requests.post(
-        'http://' + get_host_from_request(request) + '/o/revoke_token/',
+        f'http://{get_host_from_request(request)}/o/revoke_token/',
         data={
             'token': request.data.get('token', ''),
             'client_id': CLIENT_ID,
@@ -37,7 +37,7 @@ def revoke_token(request):
 
 def refresh_token(request):
     response = requests.post(
-        'http://' + get_host_from_request(request) + '/o/token/',
+        f'http://{get_host_from_request(request)}/o/token/',
         data={
             'grant_type': 'refresh_token',
             'refresh_token': request.data.get('refresh_token', ''),

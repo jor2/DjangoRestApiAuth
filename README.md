@@ -8,8 +8,14 @@ Django Oauth App
 - Used https://django-oauth-toolkit.readthedocs.io/en/latest/ to implement token functionality.
 
 ##### Run Locally:
+via Docker compose:
 ```bash
 docker-compose up --build
+```
+
+via Minikube:
+```bash
+kubectl apply -f kube/deployment.yaml
 ```
 
 ##### View Web Service at:
