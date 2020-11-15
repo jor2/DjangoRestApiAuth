@@ -49,7 +49,7 @@ class TestUserTokenView(TestCase):
         expected_post_request_data = {
             'client_id': 'Dtx0xQne2ocLkC5u27PtYRmpKAE5qPeR1WNiSJHu',
             'client_secret': 'Tl7ivTGUEcY9RqgFES7Km2BDyvlX1ZBaqZuNFOItpVPyyrWpdBVXdRFwNbWCcJ0RPfNtsfr4VbzCrbuVsnvGUIOtlmOD7ACOzpBT2uCdHfPabYeNTh8jZZFWDkRp7m0M',
-            'grant_type': 'client_credentials',
+            'grant_type': 'password',
             'password': '123456',
             'username': 'test_user'
         }
